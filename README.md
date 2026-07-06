@@ -7,3 +7,10 @@ Instead of relying on a pre-trained model’s general knowledge, this assistant 
 *"I don’t know based on this document."* 
 
 This makes the project a simple but powerful example of **Retrieval-Augmented Generation (RAG)**, a widely used approach in modern LLM applications. It highlights how AI can be grounded in external data sources, ensuring **accuracy**, **transparency**, and **domain-specific answers**.
+
+## Tech Stack
+
+- [PyPDF2](https://pypi.org/project/PyPDF2/) - Extracts raw text from uploaded PDF
+- [Sentence Transformers](https://www.sbert.net/) - Generates dense embeddings for semantic similarity
+- [Hugging Face Transformers](https://huggingface.co/google/flan-t5-base) - Instruction-tuned LLM (`google/flan-t5-base`) used to generate answers from retrieved context
+- [FAISS](https://github.com/facebookresearch/faiss) - Vector store for fast similarity search
