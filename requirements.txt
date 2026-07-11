@@ -1,6 +1,6 @@
 streamlit
 PyPDF2
 numpy
-transformers
+transformers==4.52.4
 sentence-transformers
 faiss-cpu
