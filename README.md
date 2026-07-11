@@ -12,7 +12,7 @@ This makes the project a simple but powerful example of **Retrieval-Augmented Ge
 
 ## Live Demo  
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://doc-app-assistant.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pdf-rag-assistant-v0.streamlit.app/)
 
 ## Tech Stack
 
@@ -27,8 +27,8 @@ This makes the project a simple but powerful example of **Retrieval-Augmented Ge
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/bhakuni27/Doc-QA-Assistant.git
-cd Doc-QA-Assistant
+git clone https://github.com/bhakuni27/PDF-RAG-Assistant.git
+cd PDF-RAG-Assistant
 ```
 
 ### 2. Install dependencies
