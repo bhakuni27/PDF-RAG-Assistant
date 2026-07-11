@@ -8,9 +8,47 @@ Instead of relying on a pre-trained model’s general knowledge, this assistant 
 
 This makes the project a simple but powerful example of **Retrieval-Augmented Generation (RAG)**, a widely used approach in modern LLM applications. It highlights how AI can be grounded in external data sources, ensuring **accuracy**, **transparency**, and **domain-specific answers**.
 
+> **NOTE**: This project runs fully locally and does **not require any API keys**.
+
+## Live Demo  
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://doc-app-assistant.streamlit.app/)
+
 ## Tech Stack
 
 - [PyPDF2](https://pypi.org/project/PyPDF2/) - Extracts raw text from uploaded PDF
 - [Sentence Transformers](https://www.sbert.net/) - Generates dense embeddings for semantic similarity
 - [Hugging Face Transformers](https://huggingface.co/google/flan-t5-base) - Instruction-tuned LLM (`google/flan-t5-base`) used to generate answers from retrieved context
 - [FAISS](https://github.com/facebookresearch/faiss) - Vector store for fast similarity search
+- [Streamlit](https://streamlit.io/) - Web interface for uploading PDFs and asking questions
+
+## Getting Started
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/bhakuni27/Doc-QA-Assistant.git
+cd Doc-QA-Assistant
+```
+
+### 2. Install dependencies
+
+Ensure you have **Python 3** and **pip** installed. If not, you can download Python from [python.org](https://www.python.org/).
+```
+pip install -r requirements.txt
+```
+
+### 3. Run the Streamlit app
+
+```
+streamlit run streamlit_app.py
+```
+
+### 4. Upload a PDF & Ask Questions
+
+- Upload `sample.pdf` (included in repo) or your own PDF
+- Example questions for sample.pdf:
+    - “What does our solar system include?”
+    - “What is the Kuiper Belt?”
+    - “Who discovered gravity?” → “I don’t know based on this document.”
+
