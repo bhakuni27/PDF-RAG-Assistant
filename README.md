@@ -22,6 +22,22 @@ This makes the project a simple but powerful example of **Retrieval-Augmented Ge
 - [FAISS](https://github.com/facebookresearch/faiss) - Vector store for fast similarity search
 - [Streamlit](https://streamlit.io/) - Web interface for uploading PDFs and asking questions
 
+## Repository Structure
+
+```
+Doc-QA-Assistant/
+├── screenshots/             # Demo Screenshots
+│   ├── Q1.png
+│   └── Q2.png
+├── src/
+│   ├── app.py               # DocQAAssistant class - Core QA pipeline
+│   └── utils.py             # Utility functions
+├── README.md
+├── requirements.txt         # Dependencies
+├── sample.pdf               # Example document
+└── streamlit_app.py         # UI entry point                
+```
+
 ## Getting Started
 
 ### 1. Clone the repository
@@ -52,3 +68,9 @@ streamlit run streamlit_app.py
     - “What is the Kuiper Belt?”
     - “Who discovered gravity?” → “I don’t know based on this document.”
 
+## Demo Screenshots
+
+Here are some example interactions with the assistant:
+
+![Q1 Screenshot](screenshots/Q1.png)
+![Q2 Screenshot](screenshots/Q2.png)
